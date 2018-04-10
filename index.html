@@ -36,7 +36,16 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-
-	</script>
+  document.getElementById("entrybutton").addEventListener("click", alertbox)
+  document.getElementById("entrybutton").addEventListener("click", edit)
+  function alertbox() {
+    alert ("Juan Gonzalez" + ":" + entryinput)
+  }
+  function edit() {
+    document.getElementById("textoutput").innerHTML = entryinput
+  }
+  document.removeEventListener("click", alertbox)
+  document.removeEventListener("click", edit)
+  </script>
 </body>
 </html>
