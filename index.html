@@ -39,10 +39,10 @@
   document.getElementById("entrybutton").addEventListener("click", alertbox)
   document.getElementById("entrybutton").addEventListener("click", edit)
   function alertbox() {
-    alert ("Juan Gonzalez" + ":" + entryinput)
+    alert ("Juan Gonzalez" + ":" + "entryinput")
   }
   function edit() {
-    document.getElementById("textoutput").innerHTML = entryinput
+    document.getElementById("textoutput").innerHTML = "entryinput"
   }
   document.removeEventListener("click", alertbox)
   document.removeEventListener("click", edit)
