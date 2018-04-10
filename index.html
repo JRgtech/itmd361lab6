@@ -38,11 +38,11 @@
 	<script type="text/javascript">
   document.getElementById("entrybutton").addEventListener("click", alertbox)
   document.getElementById("entrybutton").addEventListener("click", edit)
-  function alertbox(id="entryinput") {
-    alert ("Juan Gonzalez" + ":" + "entryinput")
+  function alertbox() {
+    alert ("Juan Gonzalez" + ":" + document.getElementById("textoutput"))
   }
-  function edit(id="entryinput") {
-    document.getElementById("textoutput").innerHTML = "entryinput"
+  function edit() {
+    document.getElementById("textoutput").innerHTML = document.getElementById("textoutput")
   }
   document.removeEventListener("click", alertbox)
   document.removeEventListener("click", edit)
